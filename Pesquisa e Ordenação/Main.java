@@ -79,7 +79,7 @@ public class Main {
 
     long comeco = System.currentTimeMillis();
     if (start < end) {
-			int posicaoPivo = separar(a, start, end);
+			int posicaoPivo = partition(a, start, end);
 			quickSort(a, start, end - 1);
 			quickSort(a, posicaoPivo + 1, end);
 
